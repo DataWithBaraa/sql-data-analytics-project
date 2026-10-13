@@ -76,7 +76,8 @@ customer_key,
 customer_number,
 customer_name,
 age,
-CASE 
+CASE
+	 WHEN age IS NULL THEN 'n/a'
 	 WHEN age < 20 THEN 'Under 20'
 	 WHEN age between 20 and 29 THEN '20-29'
 	 WHEN age between 30 and 39 THEN '30-39'
@@ -93,13 +94,13 @@ DATEDIFF(month, last_order_date, GETDATE()) AS recency,
 total_orders,
 total_sales,
 total_quantity,
-total_products
+total_products,
 lifespan,
--- Compuate average order value (AVO)
+-- Compute average order value (AOV)
 CASE WHEN total_sales = 0 THEN 0
 	 ELSE total_sales / total_orders
 END AS avg_order_value,
--- Compuate average monthly spend
+-- Compute average monthly spend
 CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
 END AS avg_monthly_spend

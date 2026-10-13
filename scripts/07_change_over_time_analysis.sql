@@ -38,6 +38,7 @@ GROUP BY DATETRUNC(month, order_date)
 ORDER BY DATETRUNC(month, order_date);
 
 -- FORMAT()
+-- Note: FORMAT() returns text, so ORDER BY sorts the months alphabetically (Apr, Aug, Dec...), not in time order
 SELECT
     FORMAT(order_date, 'yyyy-MMM') AS order_date,
     SUM(sales_amount) AS total_sales,

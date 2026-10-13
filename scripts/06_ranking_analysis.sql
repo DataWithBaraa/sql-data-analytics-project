@@ -28,7 +28,7 @@ SELECT *
 FROM (
     SELECT
         p.product_name,
-        SUM(f.sales_amount) AS total_revenue,
+        SUM(f.sales_amount)                             AS total_revenue,
         RANK() OVER (ORDER BY SUM(f.sales_amount) DESC) AS rank_products
     FROM gold.fact_sales f
     LEFT JOIN gold.dim_products p
@@ -67,7 +67,7 @@ SELECT TOP 10
 FROM gold.fact_sales f
 LEFT JOIN gold.dim_customers c
     ON c.customer_key = f.customer_key
-GROUP BY 
+GROUP BY
     c.customer_key,
     c.first_name,
     c.last_name
@@ -82,7 +82,7 @@ SELECT TOP 3
 FROM gold.fact_sales f
 LEFT JOIN gold.dim_customers c
     ON c.customer_key = f.customer_key
-GROUP BY 
+GROUP BY
     c.customer_key,
     c.first_name,
     c.last_name
@@ -96,7 +96,7 @@ FROM (
         c.customer_key,
         c.first_name,
         c.last_name,
-        COUNT(DISTINCT f.order_number) AS total_orders,
+        COUNT(DISTINCT f.order_number)                        AS total_orders,
         RANK() OVER (ORDER BY COUNT(DISTINCT f.order_number)) AS rank_orders
     FROM gold.fact_sales f
     LEFT JOIN gold.dim_customers c

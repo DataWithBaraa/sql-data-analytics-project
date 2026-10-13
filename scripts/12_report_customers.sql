@@ -97,7 +97,7 @@ SELECT
     total_products,
     lifespan,
     -- Compute average order value (AOV)
-    CASE WHEN total_sales = 0 THEN 0
+    CASE WHEN total_orders = 0 THEN 0
         ELSE total_sales / total_orders
     END AS avg_order_value,
     -- Compute average monthly spend

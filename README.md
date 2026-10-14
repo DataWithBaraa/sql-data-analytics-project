@@ -3,6 +3,16 @@ A comprehensive collection of SQL scripts for data exploration, analytics, and r
 This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.
 
 ---
+## 🚀 Start here
+
+1. You need SQL Server and SSMS. The course materials carry a setup guide for Windows and Mac: `sql-ultimate-course/00_setup/SETUP GUIDE - read me first.pdf`.
+2. Get the `DataWarehouseAnalytics` database in one of two ways. Restore `datasets/DataWarehouseAnalytics.bak` in SSMS (it needs SQL Server 2022 or newer). Or run `scripts/00_init_database.sql`, which creates the database and loads the three gold tables from `datasets/csv-files/`. The script reads them from `C:\sql\sql-data-analytics-project\datasets\csv-files\`: put the files there, or change the three paths.
+3. If you built the data warehouse project, you already have the gold layer and can query it directly.
+4. The scripts are numbered in the order of the project: `01` to `13`.
+
+`datasets/csv-files/` holds the full output of the data warehouse project, layer by layer: the six bronze tables, the six silver tables, and the gold layer (`dim_customers`, `dim_products`, `fact_sales`, `report_customers`, `report_products`). The project queries use the gold layer only.
+
+---
 
 ## ☕ Stay Connected
 

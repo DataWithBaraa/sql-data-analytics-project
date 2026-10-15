@@ -11,24 +11,26 @@ You explore a sales database step by step, then go deeper with trends, segments 
 ```
 sql-data-analytics-project/
 ├── 00_setup/                        the setup guide, and the one-click Docker start for Mac
-├── datasets/                        the data, as a backup and as CSV files
+├── 01_datasets/                     the data, as a backup and as CSV files
 │   ├── DataWarehouseAnalytics.bak   the database, ready to restore
 │   └── csv-files/                   the same data, to build the database yourself
-├── docs/                            the project roadmap and notes
-└── scripts/                         the queries, in the order of the videos
+├── 02_docs/                         the project roadmap and notes
+└── 03_scripts/                      the queries, in the order of the videos
     └── 00_init_database.sql         builds the database from the CSV files
 ```
 
 Get the database in one of two ways:
 
-- Restore `datasets/DataWarehouseAnalytics.bak` in SSMS. It needs SQL Server 2022 or newer.
-- Or run `scripts/00_init_database.sql`. It builds the database from the CSV files in `C:\sql\sql-data-analytics-project\datasets\csv-files\`.
+- Restore `01_datasets/DataWarehouseAnalytics.bak` in SSMS. It needs SQL Server 2022 or newer.
+- Or run `03_scripts/00_init_database.sql`. It builds the database from the CSV files in `C:\sql\sql-data-analytics-project\01_datasets\csv-files\`.
+
+The videos show the folders without numbers: `datasets` there is `01_datasets` here, `scripts` is `03_scripts`.
 
 ---
 
 ## 🗺️ What you build
 
-![The project roadmap](docs/Project%20Roadmap.png)
+![The project roadmap](02_docs/Project%20Roadmap.png)
 
 The project has two parts, and the scripts follow them:
 
@@ -71,4 +73,4 @@ More on YouTube: [Data projects](https://www.youtube.com/playlist?list=PLNcg_FV9
 
 ## 🌟 About me
 
-Hi, I'm **Baraa Khatib Salkini**. I spent 17 years in enterprise data engineering and built one of the largest lakehouses at Mercedes-Benz. Today I teach data full-time at **Data With Baraa**: visually, step by step, from zero to hero.
+Hi, I'm **Baraa Khatib Salkini**. I spent years in enterprise data engineering and built one of the largest lakehouses at Mercedes-Benz. Today I teach data full-time at **Data With Baraa**: visually, step by step, from zero to hero.

@@ -34,13 +34,13 @@ fi
 
 # Put the package files where the scripts look.
 docker exec -u root "$TARGET" mkdir -p "/sql/$PKG"
-docker cp "$PKG_DIR/datasets" "$PKG_DIR/scripts" "$TARGET:/sql/$PKG/" 2>/dev/null || for d in "$PKG_DIR/datasets" "$PKG_DIR/scripts"; do docker cp "$d" "$TARGET:/sql/$PKG/"; done
+docker cp "$PKG_DIR/01_datasets" "$PKG_DIR/03_scripts" "$TARGET:/sql/$PKG/" 2>/dev/null || for d in "$PKG_DIR/01_datasets" "$PKG_DIR/03_scripts"; do docker cp "$d" "$TARGET:/sql/$PKG/"; done
 docker exec -u root "$TARGET" chown -R mssql:root /sql
 
 # The project database, created once from the project's own script (it drops and recreates, so only when missing).
 if [ "$(sql "SET NOCOUNT ON; SELECT COUNT(*) FROM sys.databases WHERE name = 'DataWarehouseAnalytics'" | tr -d ' \r\n')" != "1" ]; then
   echo "Creating DataWarehouseAnalytics from the CSV files ..."
-  docker exec "$TARGET" /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$PASSWORD" -C -b -i "/sql/$PKG/scripts/00_init_database.sql" >/dev/null
+  docker exec "$TARGET" /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$PASSWORD" -C -b -i "/sql/$PKG/03_scripts/00_init_database.sql" >/dev/null
 fi
 echo "Ready. Database: DataWarehouseAnalytics."
 echo "Connect in Visual Studio Code: server localhost, port 1433, user sa, password $PASSWORD"

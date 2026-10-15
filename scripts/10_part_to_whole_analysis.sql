@@ -3,13 +3,12 @@
 Part-to-Whole Analysis
 ===============================================================================
 Purpose:
-    - To compare performance or metrics across dimensions or time periods.
-    - To evaluate differences between categories.
-    - Useful for A/B testing or regional comparisons.
+    - To find the proportion of each part relative to the whole.
+    - To see which categories contribute the most to overall sales.
 
 SQL Functions Used:
-    - SUM(), AVG(): Aggregates values for comparison.
-    - Window Functions: SUM() OVER() for total calculations.
+    - SUM(): Aggregates values per category.
+    - Window Functions: SUM() OVER() for the overall total.
 ===============================================================================
 */
 -- Which categories contribute the most to overall sales?

@@ -9,7 +9,7 @@ This repository contains SQL queries designed to help data analysts and BI profe
 
 ```
 sql-data-analytics-project/
-├── 00_setup/      the setup guide: SQL Server and SSMS on Windows and Mac
+├── 00_setup/      the setup guide, and the one-click Docker setup for Mac
 ├── datasets/
 │   ├── DataWarehouseAnalytics.bak   the database, ready to restore
 │   └── csv-files/                   the same data as CSV, layer by layer: bronze, silver, gold

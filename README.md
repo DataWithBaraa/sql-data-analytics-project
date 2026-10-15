@@ -2,10 +2,11 @@
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@datawithbaraa) [![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/course/sql-for-exploratory-data-analysis-eda-real-world-project/) [![Website](https://img.shields.io/badge/datawithbaraa.com-111111?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.datawithbaraa.com) [![License](https://img.shields.io/github/license/DataWithBaraa/sql-data-analytics-project?style=for-the-badge&color=2EA043)](LICENSE) [![Stars](https://img.shields.io/github/stars/DataWithBaraa/sql-data-analytics-project?style=for-the-badge&color=F5B301)](https://github.com/DataWithBaraa/sql-data-analytics-project)
 
-A comprehensive collection of SQL scripts for data exploration, analytics, and reporting. These scripts cover various analyses such as database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more.
-This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.
+The materials of the data analytics project: the data, every query from the videos, and the project roadmap.
 
-**New here? Open the setup guide in the `00_setup` folder.** It walks you through installing SQL Server and creating the databases, on Windows and Mac, with the fixes for the common errors.
+You explore a sales database step by step, then go deeper with trends, segments and two full reports.
+
+**New here? Open the setup guide in the `00_setup` folder.** It walks you through installing SQL Server and creating the database, on Windows and Mac, with the fixes for the common errors.
 
 ```
 sql-data-analytics-project/
@@ -22,6 +23,17 @@ Get the database in one of two ways:
 
 - Restore `datasets/DataWarehouseAnalytics.bak` in SSMS. It needs SQL Server 2022 or newer.
 - Or run `scripts/00_init_database.sql`. It builds the database from the CSV files in `C:\sql\sql-data-analytics-project\datasets\csv-files\`.
+
+---
+
+## 🗺️ What you build
+
+![The project roadmap](docs/Project%20Roadmap.png)
+
+The project has two parts, and the scripts follow them:
+
+- **Exploratory data analysis**, scripts `01` to `06`: you get to know the data, from the tables and dates to the big numbers and the top performers.
+- **Advanced analytics**, scripts `07` to `13`: you go deeper with trends, running totals, performance, part-to-whole and segments. Two reports close the project, one for customers and one for products.
 
 ---
 

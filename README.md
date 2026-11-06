@@ -4,6 +4,8 @@
 
 The materials of the data analytics project: the data, every query from the videos, and the project roadmap.
 
+⭐ If this project helps you, star the repository so other learners can find it too.
+
 You explore a sales database step by step, then go deeper with trends, segments and two full reports.
 
 **New here? Open the setup guide in the `00_setup` folder.** It walks you through installing SQL Server and creating the database, on Windows and Mac, with the fixes for the common errors.
@@ -26,6 +28,45 @@ Get the database in one of two ways:
 
 The videos show the folders without numbers: `datasets` there is `01_datasets` here, `scripts` is `03_scripts`.
 
+<details>
+<summary><b>The chapters of both videos</b>: the minute in the video and the script of each one</summary>
+
+**Exploratory data analysis** ([the video](https://youtu.be/6cJ5Ji8zSDg))
+
+| # | Chapter | Video | Script |
+|--:|:--|:--|:--|
+| 1 | Intro | [0:00:00](https://youtu.be/6cJ5Ji8zSDg?t=0) |  |
+| 2 | What is EDA? | [0:00:41](https://youtu.be/6cJ5Ji8zSDg?t=41) |  |
+| 3 | Download Project Materials | [0:01:58](https://youtu.be/6cJ5Ji8zSDg?t=118) | [the setup guide](00_setup) |
+| 4 | Dimensions & Measures | [0:06:09](https://youtu.be/6cJ5Ji8zSDg?t=369) |  |
+| 5 | #1 Database Exploration | [0:11:03](https://youtu.be/6cJ5Ji8zSDg?t=663) | [01_database_exploration.sql](03_scripts/01_database_exploration.sql) |
+| 6 | #2 Dimensions Exploration | [0:14:20](https://youtu.be/6cJ5Ji8zSDg?t=860) | [02_dimensions_exploration.sql](03_scripts/02_dimensions_exploration.sql) |
+| 7 | #3 Date Exploration | [0:18:08](https://youtu.be/6cJ5Ji8zSDg?t=1088) | [03_date_range_exploration.sql](03_scripts/03_date_range_exploration.sql) |
+| 8 | #4 Measures Exploration | [0:23:22](https://youtu.be/6cJ5Ji8zSDg?t=1402) | [04_measures_exploration.sql](03_scripts/04_measures_exploration.sql) |
+| 9 | #5 Magnitude Analysis | [0:31:54](https://youtu.be/6cJ5Ji8zSDg?t=1914) | [05_magnitude_analysis.sql](03_scripts/05_magnitude_analysis.sql) |
+| 10 | #6 Ranking Analysis | [0:43:05](https://youtu.be/6cJ5Ji8zSDg?t=2585) | [06_ranking_analysis.sql](03_scripts/06_ranking_analysis.sql) |
+| 11 | What is Next? | [0:50:01](https://youtu.be/6cJ5Ji8zSDg?t=3001) |  |
+
+**Advanced analytics** ([the video](https://youtu.be/2jGhQpbzHes))
+
+| # | Chapter | Video | Script |
+|--:|:--|:--|:--|
+| 1 | Intro | [0:00:00](https://youtu.be/2jGhQpbzHes?t=0) |  |
+| 2 | What is Data Analytics Project? | [0:00:46](https://youtu.be/2jGhQpbzHes?t=46) |  |
+| 3 | Download Project Materials | [0:02:07](https://youtu.be/2jGhQpbzHes?t=127) | [the setup guide](00_setup) |
+| 4 | #1 Changes Over Time Analysis | [0:06:39](https://youtu.be/2jGhQpbzHes?t=399) | [07_change_over_time_analysis.sql](03_scripts/07_change_over_time_analysis.sql) |
+| 5 | #2 Cumulative Analysis | [0:14:42](https://youtu.be/2jGhQpbzHes?t=882) | [08_cumulative_analysis.sql](03_scripts/08_cumulative_analysis.sql) |
+| 6 | #3 Performance Analysis | [0:22:32](https://youtu.be/2jGhQpbzHes?t=1352) | [09_performance_analysis.sql](03_scripts/09_performance_analysis.sql) |
+| 7 | #4 Part-To-Whole Analysis | [0:34:56](https://youtu.be/2jGhQpbzHes?t=2096) | [10_part_to_whole_analysis.sql](03_scripts/10_part_to_whole_analysis.sql) |
+| 8 | #5 Data Segmentation | [0:42:19](https://youtu.be/2jGhQpbzHes?t=2539) | [11_data_segmentation.sql](03_scripts/11_data_segmentation.sql) |
+| 9 | #6 Build Customer Report | [0:58:08](https://youtu.be/2jGhQpbzHes?t=3488) | [12_report_customers.sql](03_scripts/12_report_customers.sql) |
+| 10 | #7 Build Product Report | [1:17:21](https://youtu.be/2jGhQpbzHes?t=4641) | [13_report_products.sql](03_scripts/13_report_products.sql) |
+| 11 | Commit Code in GitHub | [1:20:58](https://youtu.be/2jGhQpbzHes?t=4858) |  |
+
+The sketches of the project: [Project_Notes_Sketches.pdf](02_docs/Project_Notes_Sketches.pdf).
+
+</details>
+
 ---
 
 ## 🗺️ What you build
@@ -36,6 +77,18 @@ The project has two parts, and the scripts follow them:
 
 - **Exploratory data analysis**, scripts `01` to `06`: you get to know the data, from the tables and dates to the big numbers and the top performers.
 - **Advanced analytics**, scripts `07` to `13`: you go deeper with trends, running totals, performance, part-to-whole and segments. Two reports close the project, one for customers and one for products.
+
+---
+
+## 🏆 Share your build
+
+Finished the project? Add this badge to the top of your own README, so others can find the original project too.
+
+[![Built with Data With Baraa](https://img.shields.io/badge/Built_with-Data_With_Baraa-F5B301?style=for-the-badge)](https://github.com/DataWithBaraa/sql-data-analytics-project)
+
+```text
+[![Built with Data With Baraa](https://img.shields.io/badge/Built_with-Data_With_Baraa-F5B301?style=for-the-badge)](https://github.com/DataWithBaraa/sql-data-analytics-project)
+```
 
 ---
 
